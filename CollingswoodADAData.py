@@ -3,7 +3,7 @@ import googlemaps as gm
 
 f_path = r"C:\Users\tthompson\Documents\CollingswoodADA\RampDataLog.xlsm"
 colls = pd.read_excel(f_path, sheet_name="data")
-# test change
+
 colls.Compliance.value_counts() / len(colls)
 
 [" ".join(a.split()) for a in colls.iloc[8].Notes.split(",")]
