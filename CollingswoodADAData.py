@@ -8,7 +8,7 @@ colls.Compliance.value_counts() / len(colls)
 
 [" ".join(a.split()) for a in colls.iloc[8].Notes.split(",")]
 
-api_key = ""
+api_key = "AIzaSyCIEkEPJdT6JPBn-igNOxm2lc83I9BJI8Y"
 gmaps = gm.Client(key=api_key)
 address_test = "1010 Emerald Ave, Haddon Township, NJ 08108"
 geocode_test = gmaps.geocode(address_test)
@@ -31,3 +31,7 @@ resp_json = response.json()
 
 lat = resp_json['results'][0]['geometry']['location']['lat']
 lng = resp_json['results'][0]['geometry']['location']['lng']
+
+# ALTERNATIVELY #
+
+# use Nominatim and GeoPandas for geocoding
