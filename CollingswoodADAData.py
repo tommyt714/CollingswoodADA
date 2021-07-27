@@ -8,7 +8,7 @@ colls.Compliance.value_counts() / len(colls)
 
 [" ".join(a.split()) for a in colls.iloc[8].Notes.split(",")]
 
-api_key = "AIzaSyCIEkEPJdT6JPBn-igNOxm2lc83I9BJI8Y"
+api_key = ""
 gmaps = gm.Client(key=api_key)
 address_test = "1010 Emerald Ave, Haddon Township, NJ 08108"
 geocode_test = gmaps.geocode(address_test)
